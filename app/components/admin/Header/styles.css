@@ -1,0 +1,47 @@
+.colorWrapper {
+  composes: themeBg from 'sharedStyles/global.css';
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container {
+  composes: centeredContent from 'sharedStyles/global.css';
+  composes: clearfix from 'sharedStyles/global.css';
+  height: 40px;
+  line-height: 40px;
+}
+
+.title {
+  composes: floatLeft from 'sharedStyles/global.css';
+}
+
+.info {
+  composes: floatRight from 'sharedStyles/global.css';
+}
+
+.infoPos{
+  position: relative;
+  cursor: pointer;
+}
+
+.container > * {
+  color: #ffffff;
+}
+
+.logout {
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.logout:hover {
+  color: #ffffff;
+}
+
+.slash {
+  margin: 0 5px;
+}
+
+.video {
+  cursor: pointer;
+  position: relative;
+}

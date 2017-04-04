@@ -1,0 +1,3 @@
+.findSection {
+  composes: queryForm from 'sharedStyles/global.css';
+}

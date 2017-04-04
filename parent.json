@@ -1,0 +1,30 @@
+{
+      "code": "200",
+      "msg": "成功",
+      "data":
+      {
+             "detail":
+             [
+                    {
+                           "marketid": "1",
+                           "marketname": "门店A",
+                           "rcord": "32131"
+                    },
+                    {
+                           "marketid": "2",
+                           "marketname": "门店B",
+                           "rcord": "32223"
+                    },
+                    {
+                           "marketid": "20",
+                           "marketname": "门店C",
+                           "rcord": "212"
+                    },
+                    {
+                           "marketid": "21",
+                           "marketname": "门店D",
+                           "rcord": "212"
+                    }
+             ]
+      }
+}

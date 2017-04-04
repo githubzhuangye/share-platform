@@ -1,0 +1,23 @@
+.container {
+  composes: clearfix from 'sharedStyles/global.css';
+}
+
+.chart {
+  composes: floatLeft from 'sharedStyles/global.css';
+  width: 600px;
+}
+
+.extra {
+  composes: floatRight from 'sharedStyles/global.css';
+  width: 320px;
+}
+
+.export {
+  margin-top: 16px;
+}
+
+.icon {
+  composes: themeColor from 'sharedStyles/global.css';
+  margin-left: 10px;
+  cursor: pointer;
+}

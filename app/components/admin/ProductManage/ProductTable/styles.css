@@ -1,0 +1,18 @@
+.footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnGroup {
+  margin-left: 22px;
+}
+
+.deleteBtn {
+  margin-right: 10px;
+}
+
+.brandImage {
+  width: 40px;
+  height: 40px;
+}

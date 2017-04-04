@@ -1,0 +1,45 @@
+.detail {
+    height: 90px;
+    background: rgb(246, 246, 246);
+    margin-bottom: 20px;
+    line-height: 90px;
+    padding-left: 20px;
+}
+
+.detail_img {
+    width: 70px;
+    height: 70px;
+    background:rgb(246, 246, 246);
+    vertical-align: middle;
+    display: inline-block;
+}
+.detail_img img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.detail_text {
+    display: inline-block;
+    width: 780px;
+    height: 70px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.detail_row {
+    height: 35px;
+    width: 100%;
+}
+
+.detail_item {
+    width: 25%;
+    line-height: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.detail_item_label {
+    font-weight: bold;
+}

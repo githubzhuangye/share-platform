@@ -1,0 +1,47 @@
+.homeMiddle{
+	margin-top: 30px;
+}
+
+.homeMiddle div{
+	width: 65px;height: 65px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+}
+
+.homeMiddle div img{
+	width: 100%;
+}
+
+.homeMiddle .triggerBtn{
+	position: relative;
+	margin-top: 5px;
+	display: block;
+	width: 70px;text-align: center;
+	color: #666;
+	font-size: 14px;
+}
+
+.triggerBtn:hover {
+	color: #f55f4e;
+}
+
+.triggerBtn img {
+	transition: 0.5s;
+}
+
+.triggerBtn:hover img{
+	opacity: 0.8;
+}
+
+.topRightImg{
+	position: relative;
+	top: 20px;
+	right: -150px;
+}
+.font22{
+	font-size: 16px;
+}
+
+.btnName{position: absolute;left: 75px;top: 25px;width: 85px;}
+.fontColors p{color: #999;}

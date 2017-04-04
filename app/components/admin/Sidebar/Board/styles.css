@@ -1,0 +1,61 @@
+.container {
+  margin: 15px 0;
+  background: #ffffff;
+}
+
+.container h3 {
+  border-radius: 4px 4px 0 0;
+  height: 40px;
+  line-height: 40px;
+  background: #007da9;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.itemContainer {
+  border: 1px solid #d8d8d8;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.item {
+  composes: clearfix from 'sharedStyles/global.css';
+  margin: 5px 8px;
+  height: 49px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #d7d7d7;
+}
+
+.icon {
+  composes: floatLeft from 'sharedStyles/global.css';
+  width: 10px;
+}
+
+.text {
+  composes: floatRight from 'sharedStyles/global.css';
+  width: 190px;
+}
+
+.red {
+  composes: themeColor from 'sharedStyles/global.css';
+}
+
+.date {
+  color: #a7a7a7;
+  margin-right: 8px;
+  float: right;
+}

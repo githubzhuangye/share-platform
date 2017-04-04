@@ -1,0 +1,52 @@
+.freshCodeModal div>div>div:nth-of-type(3){
+   border-top: none;
+   /*text-align: center;*/
+}
+.freshCodeModal div>div>div:nth-of-type(3) button[type=button]{
+    margin:10px;
+}
+.setType{
+    margin: 10px auto;
+}
+.setType .setTitle{
+    padding:10px 0;
+}
+.setType .setLists{
+    padding:10px 20px;
+}
+.setType .setLists span.openLists i{
+    color: #f77f71
+}
+.setType .setLists span.openLists button{
+    color: #f77f71;
+    background-color: transparent;
+    border-color: #f77f71;
+    /*cursor: default;*/
+}
+.setType .setLists span.closeLists button:hover,
+.setType .setLists span.closeLists button:focus,
+.setType .setLists span.closeLists button{
+    color: #666;
+    background-color: transparent;
+    border-color: #d9d9d9;
+    border-style: dashed;
+    /*cursor: default;*/
+}
+.setType .setLists>span{
+    display: inline-block;vertical-align: middle;
+    position: relative;margin-right: 20px;margin-bottom:10px;
+}
+.setType .setLists span i{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.couponLimit{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}

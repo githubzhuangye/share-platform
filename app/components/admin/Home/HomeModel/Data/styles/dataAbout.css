@@ -1,0 +1,115 @@
+/*今日数据*/
+.todyData{
+	margin: 20px 0;
+}
+
+.todyDataCont{
+	/*cursor: pointer;*/
+	margin-right: 10px;
+	text-align: center;
+}
+
+.todyDataCont p:nth-child(1){
+	color: #E04747;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.todyDataCont p:nth-child(2){
+	font-size: 16px;
+	display: inline-block;
+	background: url(images/red_arr.png) no-repeat center left;
+	padding-left: 10px;
+	margin-left: 5px;
+}
+
+/*changebox*/
+.modalWrap{width: 400px !important;height: 300px;}
+
+.changeBox{
+	overflow: hidden;
+	width: 100%;
+}
+
+.changeBox th{
+	text-align: center;
+	background: none;
+}
+
+.changeBox td{
+	text-align: center;
+	padding: 5px 0px;
+	border: none;
+}
+
+.changeWrap div{
+	padding-bottom: 0;
+}
+
+.logoShow{
+	height: 30px;
+}
+
+.todyDataMore{
+	text-align: center;
+	border-left: 1px solid #d2d2d2;
+	cursor: pointer;
+}
+
+.todyDataMore img{
+	display: block;
+	margin: 0 auto;
+	width: 26px;
+	margin-top: 10px;
+}
+.todyDataCont img{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.todyDataMore p{
+	margin-top: 15px;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}

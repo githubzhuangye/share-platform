@@ -1,0 +1,8 @@
+.minfeeWrap{
+  padding-left:47px;
+}
+.minfeeWrap>div,
+.minfeeWrap>div>div{
+  display: inline-block;
+   vertical-align: top;
+}

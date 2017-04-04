@@ -1,0 +1,13 @@
+.container {
+  composes: clearfix from 'sharedStyles/global.css';
+}
+
+.board {
+  composes: floatLeft from 'sharedStyles/global.css';
+  width: 230px;
+  margin-bottom: 30px;
+}
+
+.board:nth-of-type(4n) {
+  width: 170px;
+}

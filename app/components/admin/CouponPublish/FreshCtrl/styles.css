@@ -1,0 +1,10 @@
+.showPic {
+  width:255px;
+  height:470px;
+  margin-left:20px;
+  float: left;
+}
+
+.showPic img {
+  width:100%;
+}

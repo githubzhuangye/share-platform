@@ -1,0 +1,23 @@
+.container {
+    border: 1px solid #e9e9e9;
+    width: 100%;
+}
+
+.row {
+  line-height: 30px;
+}
+
+.row td:nth-of-type(1) {
+    width: 33.3%;
+    text-align: right;
+    background-color: #f7f7f7;
+    color: #999;
+    padding: 0 10px;
+}
+
+.row td:nth-of-type(2) {
+    border: 1px solid #e9e9e9;
+    font-size:13px;
+    color: '#666';
+    padding: 0 10px;
+}

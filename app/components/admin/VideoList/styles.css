@@ -1,0 +1,52 @@
+.list {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 2;
+  background: white;
+  border: 1px solid #F2F1F2;
+  cursor: pointer;
+  width: 280px;
+}
+
+.item {
+  display: inline-block;
+  width: 280px;
+  padding: 15px 20px;
+}
+
+.title {
+  padding: 15px 20px;
+  background: #E9E9E9;
+  cursor: default;
+}
+
+.numberCircle {
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  border: 1px solid #8d8d8d;
+  color: #666666;
+}
+
+.itemText {
+  margin-left: 8px;
+  color: #666666;
+}
+
+.item:hover {
+  background: #CE3135;
+  color: white;
+}
+
+.item:hover .itemText {
+  color: white;
+}
+
+.item:hover .numberCircle {
+  border-color: #F2F1F2;
+  color: white;
+}

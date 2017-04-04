@@ -1,0 +1,13 @@
+.findSection {
+  composes: queryForm from 'sharedStyles/global.css';
+}
+
+.footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shelfBtn {
+  composes: tableFooterBtn from 'sharedStyles/global.css';
+}

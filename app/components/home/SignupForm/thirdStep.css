@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+}
+
+.info {
+  font-size: 30px;
+  margin: 40px 0;
+}
+
+.jump {
+  line-height: 32px;
+}
+
+.time {
+  margin-top: 8px;
+}

@@ -1,0 +1,51 @@
+.settingCoupon {
+  margin-left:30px;
+  width:520px;
+  float: left;
+}
+.juiCutLabel {
+  margin:20px auto 15px auto;
+  position: relative;
+}
+.juiCutLabel:before {
+  content: "\200B";
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  border-top: 1px dashed #e7e7eb;
+}
+.juiCutLabel .juiMessageBar {
+  padding-right: 10px;
+  background-color: #fff;
+}
+.juiMessageBar {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1em;
+  padding-left: 11px;
+}
+.juiMessageBar:after {
+  content: "\200B";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 6px;
+  background-color: #f98375;
+}
+
+.userInfo {
+  comoposes: clearfix from 'sharedStyles/global.css';
+}
+
+.userType {
+  composes: floatLeft from 'sharedStyles/global.css';
+  color: #999;
+  margin-left: '10px';
+}
+
+.couponPublishMode {
+  composes: floatRight from 'sharedStyles/global.css';
+  composes: themeColor from 'sharedStyles/global.css';
+}

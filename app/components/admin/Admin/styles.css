@@ -1,0 +1,21 @@
+.container {
+    min-height: 100vh;
+}
+
+.content {
+    composes: centeredContent from 'sharedStyles/global.css';
+    composes: clearfix from 'sharedStyles/global.css';
+    min-height: calc(100vh - 50px - 25px);
+    /* header 50px, footer 25px */
+}
+
+.sidebar {
+    composes: floatLeft from 'sharedStyles/global.css';
+    width: 220px;
+    margin-right: 10px;
+}
+
+.main {
+    composes: floatRight from 'sharedStyles/global.css';
+    width: 970px;
+}

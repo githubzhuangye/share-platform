@@ -1,0 +1,28 @@
+.container {
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container h3 {
+  border-radius: 4px 4px 0 0;
+  height: 40px;
+  line-height: 40px;
+  background: #df3e3e;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.innerContainer {
+  border: 1px solid #d8d8d8;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  height: 230px;
+}
+.innerContainer img{
+  display: block;
+  width: 200px;
+  margin: 5px auto;
+}

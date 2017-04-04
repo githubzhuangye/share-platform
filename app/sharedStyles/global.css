@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: '微软雅黑';
+}
+
+.centeredContent {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.globalWidth {
+  width: 1200px;
+}
+
+.miyaModal {
+  height: 300px;
+  overflow: auto;
+}
+
+.fourWordsWidth {
+  width: 48px;
+}
+
+.ellipsisText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.themeColor {
+  color: #f55f4e;
+}
+
+.themeBg {
+  background: #D02F2F;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.clearfix {
+    zoom:1;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/* 商品、门店管理 */
+.queryForm {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.tableFooterBtn {
+  margin-left: 22px;
+}
+
+/* 二级菜单 */
+.hLink {
+  padding-right: 16px;
+  color: #666;
+}
+
+.hLink.hLinkActive {
+  color: #f55f4e;
+}

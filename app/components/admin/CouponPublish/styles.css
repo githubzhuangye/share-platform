@@ -1,0 +1,213 @@
+.tbfContext {
+    width: 890px;
+    display: block;
+    background-color: #fff;
+    height: auto;
+}
+
+.tbfMain {
+    overflow: hidden;
+    background: #fff;
+    padding: 30px;
+}
+
+.couponPublish .ant-spin-nested-loading>.ant-spin-container {
+    opacity: 1
+}
+
+.settingCoupon {
+    margin-left: 30px;
+    width: 520px;
+    float: left;
+}
+
+.juiCutLabel {
+    margin: 20px auto 15px auto;
+    position: relative;
+}
+
+.juiCutLabel:before {
+    content: "\200B";
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    border-top: 1px dashed #e7e7eb;
+}
+
+.juiCutLabel .juiMessageBar {
+    padding-right: 10px;
+    background-color: #fff;
+}
+
+.juiMessageBar {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1em;
+    padding-left: 11px;
+}
+
+.juiMessageBar:after {
+    content: "\200B";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 6px;
+    background-color: #f98375;
+}
+
+.userInfo {
+    comoposes: clearfix from 'sharedStyles/global.css';
+}
+
+.userType {
+    composes: floatLeft from 'sharedStyles/global.css';
+    color: #999;
+    margin-left: '10px';
+}
+
+.couponPublishMode {
+    composes: floatRight from 'sharedStyles/global.css';
+    composes: themeColor from 'sharedStyles/global.css';
+    position: absolute;
+    top: -115px;
+    left: 50px;
+}
+
+.wxSelect {
+    position: absolute;
+    top: -37px;
+    left: 0;
+}
+
+.couponPublishMode p {
+    color: #CCC;
+    margin-top: -5px;
+}
+
+.c1 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #63B359;
+    position: relative;
+    top: 5px;
+}
+
+.c2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #2C9F67;
+    position: relative;
+    top: 5px;
+}
+
+.c3 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #509FC9;
+    position: relative;
+    top: 5px;
+}
+
+.c4 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #5885CF;
+    position: relative;
+    top: 5px;
+}
+
+.c5 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #9062C0;
+    position: relative;
+    top: 5px;
+}
+
+.c6 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #D09A45;
+    position: relative;
+    top: 5px;
+}
+
+.c7 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #E4B138;
+    position: relative;
+    top: 5px;
+}
+
+.c8 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #EE903C;
+    position: relative;
+    top: 5px;
+}
+
+.c9 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #DD6549;
+    position: relative;
+    top: 5px;
+}
+
+.c10 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #CC463D;
+    position: relative;
+    top: 5px;
+}
+
+.wxSelectBox {
+    float: left !important;
+    padding: 5px 10px;
+}
+
+.wxSelectBox span {
+    top: 0;
+}
+.adminMoney{
+  margin-left: 30px;
+  color: #EA4E4E;
+  cursor: pointer;
+}
+
+.adminMoney em{font-size: 16px;font-style: normal;margin-right: 5px;}

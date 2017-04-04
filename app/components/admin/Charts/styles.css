@@ -1,0 +1,25 @@
+.container {
+  width: 99%;
+  height: 300px;
+}
+
+.reportDataCont canvas{
+	position: absolute;
+	left: 5px !important;
+}
+
+
+/*数据报表*/
+.reportData{
+	margin-top: 20px;
+}
+
+.reportDataCont{
+	overflow: hidden;
+	/*border: 1px solid #CCC;*/
+}
+
+.reportDataCont>div{
+	float: left;
+	width: 49%;height: 300px;
+}

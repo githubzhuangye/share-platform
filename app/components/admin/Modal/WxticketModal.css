@@ -1,0 +1,13 @@
+.container {
+  overflow: auto;
+  max-height: 400px;
+  min-height: 200px;
+}
+
+.content > * {
+  padding: 5px 0;
+}
+.typeCheck div{
+  font-weight: 400;
+  padding-left:10px;
+}

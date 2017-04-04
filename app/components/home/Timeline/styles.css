@@ -1,0 +1,53 @@
+.container {
+  composes: centeredContent from 'sharedStyles/global.css';
+  margin: 30px auto;
+  position: relative;
+  height: 120px;
+  overflow: auto;
+}
+
+.itemContainer {
+  clear: both;
+  width: calc(50% - 20px);
+}
+
+.left {
+  composes: floatLeft from 'sharedStyles/global.css';
+  text-align: right;
+}
+
+.right {
+  composes: floatRight from 'sharedStyles/global.css';
+}
+
+.date {
+  font-size: 16px;
+  color: #999999;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.desc {
+  font-size: 15px;
+  color: #828282;
+}
+
+.dotline {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 8px);
+}
+
+.greyLine {
+  background: #c3c3c3;
+  width: 1px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.dot {
+  position: absolute;
+}

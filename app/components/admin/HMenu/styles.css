@@ -1,0 +1,17 @@
+.list {
+  background: white;
+  cursor: pointer;
+  border: 1px solid #F2F1F2;
+}
+
+.item {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 20px;
+  color: #666666;
+}
+
+.item:hover {
+  background: #CE3135;
+  color: white;
+}

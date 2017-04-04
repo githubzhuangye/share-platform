@@ -1,0 +1,115 @@
+*{font-family: "Microsoft YaHei";}
+.homeWrap{
+	max-width: 975px;
+	/*overflow: hidden;*/
+}
+
+.homeTop{
+	border: 1px solid #d8d8d8;
+	padding: 20px 0;
+	background: #FFF;
+	border-radius: 10px;
+	/*box-shadow: 0 1px 3px rgba(100, 100, 100, 0.2);*/
+    	border-color: #eee;
+    	border-top: 0;
+    	border-radius: 0 0 5px 5px;
+}
+
+.hTip{position: absolute;top: -45px;right: 90px;}
+
+.qrContainer{
+	position: absolute;
+  	top: -10px;
+  	right: -100px;
+  	width: 76px;height: 39px;
+  	z-index: 500;
+  	cursor: pointer;
+}
+
+.qrContainer img{width: 100%;}
+
+.qrContainer p{
+	margin-left: 60px;
+	line-height: 50px;
+	color: #D13333;
+	/*color: #FFF;*/
+	font-weight: bold;
+}
+.brShowImg{
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: url(images/border_img.png) no-repeat center;
+	background-size: 100% 100%;
+	padding: 2px;
+}
+
+/*.homeTop:hover{
+	box-shadow: 0 1px 6px rgba(100, 100, 100, 0.2);
+    	border-color: #eee;
+}*/
+.topRightImg{padding-top: 5px;}
+
+.liBa{
+	position: absolute;
+    top: -17px;
+    right: -5px;
+}
+
+.topInner{
+  	padding-bottom: 15px;
+  	border-bottom: 1px solid #CCC;
+}
+
+.innerLeft{
+  	text-align: left;
+  	font-size: 14px;
+  	line-height: 20px;
+}
+
+.innerLeft span{
+	font-size: 24px;
+}
+
+.homeMain{
+	border: 1px solid #d8d8d8;
+	/*padding: 20px;*/
+	margin-top: 20px;
+	background: #FFF;
+	border-radius: 5px 5px 0 0;
+	/*box-shadow: 0 1px 6px rgba(100, 100, 100, 0.2);*/
+    	border-color: #eee;
+}
+
+
+.homeTitle{
+	padding-top: 10px;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.homeTitle i{
+	font-size: 16px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.areaMiddle{
+	margin-top: 20px;
+	/*padding-left: 20px;*/
+	padding-bottom: 20px;
+}
+
+.tipRouteArea{
+	overflow: hidden;
+	position: relative;
+	height: 96px;
+	margin: 20px 0;
+}
+
+/*ani*/
+.aniEase{
+	transition:All 0.4s ease-in-out;-webkit-transition:All 0.4s ease-in-out;-moz-transition:All 0.4s ease-in-out;-o-transition:All 0.4s ease-in-out;
+}

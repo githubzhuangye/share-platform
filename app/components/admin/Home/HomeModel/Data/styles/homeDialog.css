@@ -1,0 +1,123 @@
+.homeMiddle{
+	margin-top: 30px;
+}
+
+.homeMiddle div{
+	width: 65px;height: 65px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+}
+
+.homeMiddle div img{
+	width: 100%;
+}
+
+.homeMiddle .triggerBtn{
+	margin-top: 5px;
+	display: block;
+	width: 65px;text-align: center;
+	color: #666;
+	font-size: 14px;
+}
+
+.dialogNull{
+	position: relative;
+	font-size: 14px;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+.dialogWrap{
+	overflow: hidden;
+	height: 300px;
+}
+
+.MessageBox{
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 100px;height: 300px;
+	border-right: 1px solid #CCC;
+}
+
+.ScrollHeight{
+	float: left;
+}
+
+.messageLeftBox{
+	float: right;
+	width: 320px;height: 300px;
+	padding-left: 10px;
+}
+
+.messageLeftBox>p:first-child{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tipsArea{
+	position: relative;
+	/*border: 1px solid #CCC;*/
+	margin: 20px 0;
+}
+
+.tipsArea p{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.tipsArea p span{
+	display: block;
+}
+
+.tipsArea p:first-child{
+	width: 80px;
+	text-align: left;
+	/*padding-left: 20px;*/
+}
+
+.tipsArea p:first-child span:nth-child(1){
+	font-size: 20px;line-height: 18px;
+}
+
+.tipsArea p:nth-child(2) span:nth-child(1){
+	font-size: 14px;
+}
+
+.tipsArea p:last-child{
+	position: absolute;
+	right: 0;top: 50%;
+	width: 60px;
+	height: 30px;line-height: 30px;
+	margin-top: -15px;
+}
+.tipsArea p:last-child span{
+	display: inline-block;
+	vertical-align: middle;
+	color: #E52222;
+	cursor: pointer;
+}
+
+.tipsArea p:last-child span:hover{
+	color: #C41717;
+	text-decoration: underline;
+}
+.iconCircle{position: absolute;left: 0;top: 5px;display: inline-block;width: 10px;height: 10px;border-radius: 10px;margin-right: 5px;}
+.iconCircleRed{background: #DF3E3E;}
+.iconCircleOpa{opacity: 0;}
+.iconCircleBlue{background: #007DA9;}
+
+.tipsInner{
+	border: 1px solid #f4f4f4;
+	padding: 5px;
+}
+
+div.tipsInner:nth-child(1){
+	border-bottom: none;
+}
+
+.tipsInner:nth-child(1){
+	border-bottom: 1px solid #CCC;
+}

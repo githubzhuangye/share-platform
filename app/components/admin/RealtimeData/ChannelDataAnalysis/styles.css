@@ -1,0 +1,92 @@
+li{
+  list-style: none;
+}
+
+.container {
+  width:100%;
+  min-height:400px;
+  font-size:14px;
+  font-family: '微软雅黑',  Arial, sans-serif;
+  background:white;
+  padding-top: 10px;
+}
+.loading{
+   text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    margin: 20px 0;
+}
+
+.title{
+  background: url('images/d_tit.png') no-repeat left center;
+  padding:5px 0 5px 22px;
+  color: #FF6600;
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.body{
+  width: 90%;
+  background: white;
+  margin: 0 auto;
+  border-bottom: 1px solid #E8E6E4;
+  overflow: hidden;
+}
+ul.body{
+  display: flex;
+  width: 90%;
+  background: white;
+  margin: 0 auto;
+  border: 0;
+  overflow: hidden;
+  padding: 40px 0 40px 20px;
+  margin-bottom: 20px;
+}
+.li li div p:first-child{
+  font-size: 14px;
+  text-align: center;
+}
+.li li div p:last-child{
+  color: #FF3400;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding:0 18px;
+}
+.body li{
+  margin-right:6px;
+}
+
+li:last-child p:last-child{
+  border: 0;
+}
+li.summarySummary{
+  flex: 1;
+}
+li.summarySummary div p{
+  border: 0;
+  color: #666460;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pvuv{
+    width: 90%;
+    background: white;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.pvuv li{
+  float: left;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+.flex{
+  display: flex;
+  margin: 20px auto;
+}
+.flex li{
+  flex: 1;
+}

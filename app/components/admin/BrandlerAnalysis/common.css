@@ -1,0 +1,18 @@
+.extraContainer {
+  margin-top: 20px;
+}
+
+.extraTitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.NOItem {
+  margin-bottom: 10px;
+}
+
+.useItem {
+  display: inline-block;
+  width: 100px;
+  margin: 0 10px;
+}

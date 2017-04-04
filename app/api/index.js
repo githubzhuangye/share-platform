@@ -1,0 +1,16 @@
+export * as signupApi from './signup';
+export * as authApi from './auth';
+export * as ticketQueryApi from './ticketQuery';
+export * as productManageApi from './productManage';
+export * as couponPublishApi from './couponPublish';
+export * as marketManageApi from './marketManage';
+export * as commonApi from './common';
+export * as reportApi from './report';
+export * as realDataApi from './realData';
+export * as userDataApi from './userData';
+export * as DataPublicApi from './DataPublic';
+export * as ChannelDataAnalysisApi from './ChannelDataAnalysis';
+export * as settingApi from './setting';
+export * as userManageApi from './UserManage';
+export * as hqCouponApi from './hqCoupon';
+export * as alCouponApi from './alCoupon';

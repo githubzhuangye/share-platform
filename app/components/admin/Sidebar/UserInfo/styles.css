@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #d8d8d8;
+  border-top: none;
+  background: #ffffff url('images/avator-bg.png') no-repeat;
+}
+
+.logo {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: calc(50% - 36px);
+  width: 72px;
+  height: 72px;
+}
+
+.logo img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.logo img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.username {
+  margin-top: 150px;
+  margin-bottom: 11px;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+.messagesAndSetting {
+  background: #F9F9F9;
+}
+
+.messagesAndSettingItem {
+  width: 49%;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  display: inline-block;
+  color: #666;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.messagesAndSettingItem:hover {
+  color: #f55f4e;
+}
+
+.divider {
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  background: #CCC;
+  transform: translate(1px, 7px);
+}

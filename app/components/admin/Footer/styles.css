@@ -1,0 +1,14 @@
+.colorWrapper {
+  width: 100%;
+  background: #333333;
+}
+
+.container {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.container p {
+  color: #ffffff;
+}

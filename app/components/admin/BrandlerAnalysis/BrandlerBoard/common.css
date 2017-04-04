@@ -1,0 +1,35 @@
+.container {
+  composes: clearfix from 'sharedStyles/global.css';
+}
+
+.number {
+  composes: themeColor from 'sharedStyles/global.css';
+  font-size: 28px;
+  height: 65px;
+}
+
+.bottomLeft {
+  composes: floatLeft from 'sharedStyles/global.css';
+  width: 70px;
+}
+
+.bottomRight {
+  composes: floatRight from 'sharedStyles/global.css';
+  width: 105px;
+}
+
+.red {
+  composes: themeColor from 'sharedStyles/global.css';
+}
+
+.No1 {
+  font-weight: bold;
+}
+
+.No1Text {
+  composes: themeColor from 'sharedStyles/global.css';
+  font-weight: bold;
+  font-size: 16px;
+  height: 65px;
+  overflow: auto;
+}

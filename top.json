@@ -1,0 +1,13 @@
+{
+      "code": "200",
+      "msg": "成功",
+      "data":
+      {
+             "getcnt": "1111",
+             "getusers": "1111",
+             "usecnt": "1111",
+             "useusers": "1111",
+             "usepers": "11%",
+             "useavg": "1111"
+      }
+}

@@ -1,0 +1,9 @@
+.modalContent {
+  composes: miyaModal from 'sharedStyles/global.css';
+}
+.modalContent table thead tr th{
+    background: #fff;
+}
+.modalContent table tbody tr td{
+   border-bottom: 1px solid transparent; 
+}

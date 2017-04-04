@@ -1,0 +1,105 @@
+.container {
+  width:100%;
+  min-height:624px;
+  font-size:14px;
+  font-family: '微软雅黑',  Arial, sans-serif;
+  background:white;
+  padding-top: 10px;
+}
+.title{
+  background: url('images/d_tit.png') no-repeat left center;
+  padding:5px 0 5px 22px;
+  color: #FF6600;
+  display: inline-block;
+  margin: 10px 20px;
+}
+.body{
+  width: 90%;
+  background: white;
+  margin: 0 auto;
+  border-bottom: 1px solid #E8E6E4;
+  overflow: hidden;
+}
+.bodyT{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header{
+  width: 90%;
+  height: 40px;
+  background: white;
+  margin: 0 auto;
+  overflow: hidden;
+  padding:33px 0 50px 23px;
+}
+
+
+.header_data{
+  width:500px;
+  margin: 10px auto;
+}
+
+.header button{
+  padding:2px 12px;
+  border: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header_find{
+  color: white;
+  background: #00BAF5;
+}
+.header .header_reset{
+  background: white;
+  border: 1px solid gray;
+}
+.p{
+  margin:16px 66px;
+  color: #000;
+  font-size: 16px;
+}
+.center{
+  text-align: center;
+}
+.center>p{
+  font-size:28px;
+  font-weight: bolder;
+  margin: 20px auto;
+}
+
+ul.body{
+  display: flex;
+  width: 90%;
+  background: white;
+  margin: 0 auto;
+  border: 0;
+  overflow: hidden;
+}
+.leftSize{
+  font-size:28px;
+  font-weight: bolder;
+  margin: 10px 0 20px 50px;
+  overflow: hidden;
+  width: 100%;
+}
+.leftSize~ul li{
+  margin-left: 20px;
+}
+.leftSize~ul li span{
+  color: #ff7200;
+  font-size: 28px;
+}
+.flex{
+  display: flex;
+  margin: 20px auto;
+}
+.flex li{
+  flex: 1;
+}
+
+div.dataSummary p:last-child{
+  color:#ff4800;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}

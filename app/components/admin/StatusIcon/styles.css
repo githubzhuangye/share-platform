@@ -1,0 +1,23 @@
+.status {
+  display: inline-block;
+  margin-right: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.statusGreen {
+  background: #1DA71B;
+}
+
+.statusRed {
+  background: #CE3034;
+}
+
+.statusBlue {
+  background: #127EA7;
+}
+
+.statusYellow {
+  background: #FDBF2D;
+}

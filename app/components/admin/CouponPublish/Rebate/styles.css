@@ -1,0 +1,8 @@
+.rebateWrap{
+
+}
+.rebateWrap>span,
+.rebateWrap>div{
+  display: inline-block;
+  vertical-align: top;
+}

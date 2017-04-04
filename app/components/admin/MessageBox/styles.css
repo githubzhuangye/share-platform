@@ -1,0 +1,47 @@
+.container {
+  composes: clearfix from 'sharedStyles/global.css';
+  margin: -16px;
+}
+
+.titles {
+  composes: floatLeft from 'sharedStyles/global.css';
+  width: 150px;
+}
+
+.title {
+  composes: clearfix from 'sharedStyles/global.css';
+  padding: 8px 16px;
+}
+
+.icon {
+  composes: floatLeft from 'sharedStyles/global.css';
+  margin-right: 5px;
+}
+
+.text {
+  composes: floatRight from 'sharedStyles/global.css';
+  composes: clearfix from 'sharedStyles/global.css';
+  width: 100px;
+}
+
+.word {
+  composes: floatLeft from 'sharedStyles/global.css';
+}
+
+.date {
+  composes: floatRight from 'sharedStyles/global.css';
+}
+
+.active {
+  background: #E5E5E5;
+}
+
+.content {
+  composes: floatRight from 'sharedStyles/global.css';
+  width: 500px;
+  height: 400px;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-left: 1px solid #E9E9E9;
+}

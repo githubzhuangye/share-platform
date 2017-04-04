@@ -1,0 +1,111 @@
+.dataWrap {
+    width: 90%;
+    margin: 0 atuo;
+    height: 350px;
+}
+
+.FunnelWrap {
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.funnelBox {
+    width: 80%;
+    height: 320px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    background: url('images/funnel_bg.png') no-repeat center center;
+    background-size: 186px 304px;
+}
+
+.funnelTit {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 137px;
+}
+
+.funnelInfo {
+    position: absolute;
+    left: 0;right: 0;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    color: #FFF;
+}
+
+.funnelInfo span {
+    display: block;
+    text-align: center;
+}
+
+.n1{
+  top: 50px;
+}
+
+.n2{
+  top: 170px;
+}
+
+.n3{
+  top: 260px;
+}
+
+.funnelData{
+  position: absolute;
+  left: 50px;
+  width: 100px;height: 43px;text-align: center;line-height: 43px;color: #FF7200;font-weight: bolder;font-size: 16px;
+  background: url('images/funnel_arrow.png') no-repeat center right;
+}
+.c1{
+  top: 35%;
+}
+.c2{top: 70%;}
+
+
+.header{
+  width: 90%;
+  height: 40px;
+  background: white;
+  margin: 0 auto;
+  overflow: hidden;
+  padding:33px 0 50px 23px;
+}
+
+.header_data{
+  float: left;
+  margin-right: 20px;
+}
+
+.header_data input{
+  width:100px;
+}
+.header button{
+  padding:2px 12px;
+  border: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header_find{
+  color: white;
+  background: #00BAF5;
+}
+.header .header_reset{
+  background: white;
+  border: 1px solid gray;
+}
+.p{
+  margin:16px 66px;
+  color: #000;
+  font-size: 16px;
+}
+.onload{
+  display: inline-block;
+  background: url('images/icon_d.png') no-repeat left center;
+  padding:5px 0 5px 32px;
+  margin-left: 20px;
+  cursor: pointer;
+}

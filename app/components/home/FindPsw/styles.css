@@ -1,0 +1,26 @@
+.container {
+  composes: centeredContent from 'sharedStyles/global.css';
+  width: 780px;
+  min-height: 400px;
+  overflow: auto;
+  margin-top:60px;
+}
+
+.content {
+  margin-top: 16px;
+}
+.contentLeft{
+  float: left;
+  width:450px;
+}
+.contentRight{
+  float: right;
+  width:300px;
+}
+.telStyle{
+  width:210px;
+  margin-right:5px;
+}
+.getValidate{
+  /*margin-top:-3px;*/ 
+}

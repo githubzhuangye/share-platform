@@ -1,0 +1,111 @@
+.freshCode,
+.freshImg,
+.freshBtn{
+    text-align: center;
+}
+.freshImg{
+    width: 363px;
+    height: 128px;
+    margin: auto;
+}
+.freshImg img{
+    /*max-width: 100%;
+    max-height: 100%;*/
+    width:363px;
+    height:128px;
+}
+.freshCode span{
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 4px;
+    width: 64px;
+}
+.freshBtn{
+    margin-top:10px;
+}
+.addCode{
+    margin:auto 10px 20px;
+}
+.addCode .freshImg img{
+     width:78px;
+    height:78px;
+}
+.addCode .freshImg{
+    cursor: pointer;
+    margin-top:35px;
+}
+.freshCodeModal div>div>div:nth-of-type(3){
+   border-top: none;
+   text-align: center;
+}
+.freshCodeModal div>div>div:nth-of-type(3) button[type=button]{
+    margin:10px 20px;
+}
+.freshCodeRules{}
+.freshCodeTips{color:#333333;font-size:12px;margin:20px auto;}
+.freshCodeTips span{display: inline-block;vertical-align: middle;margin-right:50px;color:#999}
+.freshCodeTips span em{font-style:normal;}
+
+.freshCodeInputs input:focus,
+.freshCodeInputs input:hover,
+.freshCodeInputs input[disabled]:hover{
+    border:1px solid transparent;
+    border-bottom:1px solid  #d9d9d9;
+}
+.freshCodeInputs input:disabled{
+    background: #fff;
+}
+.freshCodeInputs input{
+    border:1px solid transparent;
+    border-bottom:1px solid  #d9d9d9;
+    border-radius: 0;
+    padding: 4px 0;
+}
+.freshCodeInputs>span:nth-of-type(1){margin-right:30px;}
+.freshCodeInputs span:nth-of-type(1) input{
+    width:80px;
+}
+.freshCodeDesc{margin:5px auto auto 90px;color:#333333;font-size:12px;}
+.freshCodeDesc span{
+    display: inline-block;vertical-align: middle;margin:auto 30px;
+}
+.freshCodeInputs span:nth-of-type(2) input{
+    width: 30px;
+}
+.freshCodeInputs span:nth-of-type(2) em {
+    display: inline-block;
+    vertical-align: middle;
+    width:18px;
+    height: 18px;
+    /*background: url('images/switch-icon.png') no-repeat center center;*/
+    margin: auto 10px;
+}
+.freshCodeImg {margin-top:60px;}
+.freshCodeImg span{
+    display: inline-block;
+    vertical-align: top;
+    margin-right:20px;
+    color:#333333;
+    font-size:14px;
+}
+.freshCodeImg span:nth-of-type(1){
+    margin-right:20px;
+}
+.freshCodeImg span p{
+    margin-top:10px;
+}
+.freshCodeImg span p em{
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    margin-right: 0px;
+    font-size: 16px;
+    width: 72px;
+    text-align: center;
+    overflow: hidden
+}
+
+

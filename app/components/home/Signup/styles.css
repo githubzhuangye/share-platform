@@ -1,0 +1,18 @@
+.container {
+  composes: centeredContent from 'sharedStyles/global.css';
+  width: 780px;
+  min-height: 400px;
+  overflow: auto;
+  position: relative;
+}
+
+.content {
+  margin-top: 16px;
+}
+
+.video {
+  position: absolute;
+  right: 70px;
+  bottom: 20px;
+  color: #7A7A7A;
+}

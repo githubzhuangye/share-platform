@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  background-color: #262584;
+  overflow: hidden;
+}
+
+.wrapper {
+  composes: centeredContent from 'sharedStyles/global.css';
+  height: 480px;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  left: -300px;
+  right: -300px;
+  height: 480px;
+}
+
+.arrow img{
+  position: absolute;
+  bottom: 15px;
+  width: 25px;
+  height: 26px;
+}
+
+.arrow img:hover {
+  cursor: pointer;
+}
+
+.arrow img:nth-of-type(1) {
+  right: calc(63px);
+}
+
+.arrow img:nth-of-type(2) {
+  right: calc(25px);
+}
+
+.form {
+  position: absolute;
+  right: calc(25px);
+  top: 60px;
+}

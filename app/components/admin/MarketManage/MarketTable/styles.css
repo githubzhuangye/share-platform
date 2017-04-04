@@ -1,0 +1,13 @@
+.footerContainer {
+  composes: clearfix from 'sharedStyles/global.css';
+  margin-top: 10px;
+}
+
+.btns {
+  composes: floatLeft from 'sharedStyles/global.css';
+  composes: tableFooterBtn from 'sharedStyles/global.css';
+}
+
+.page {
+  composes: floatRight from 'sharedStyles/global.css';
+}

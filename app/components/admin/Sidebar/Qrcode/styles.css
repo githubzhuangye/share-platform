@@ -1,0 +1,19 @@
+
+.qrContainer{
+	position: absolute;
+  	top: 0;
+  	right: 0;
+  	width: 100%;height: 50px;
+  	z-index: 500;
+  	cursor: pointer;
+}
+
+.qrContainer p{
+	margin-left: 60px;
+	line-height: 50px;
+	color: #D13333;
+	/*color: #FFF;*/
+	font-weight: bold;
+}
+
+.qrContainer img{position: absolute;top: 0;right: 0;width: 50px;}

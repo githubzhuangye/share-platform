@@ -20,7 +20,6 @@ import { DataPublicApi } from 'api';
     activeList: TradesMan.activeList,
     tradesChild: TradesMan.tradesChild,
     tradesParent: TradesMan.tradesParent,
-    topData:userData.topData,
   }),
   dispatch => bindActionCreators({...TradesManActionCreators,...userDataActionCreators}, dispatch)
 )
@@ -31,7 +30,6 @@ export default class TradesMan extends Component {
     activeList: PropTypes.array.isRequired,
     tradesChild: PropTypes.object.isRequired,
     tradesParent: PropTypes.object.isRequired,
-    topData: PropTypes.object.isRequired,
   }
   state = {
     topData: {getcnt:'0',getusers:'0',usecnt:'0',useusers:'0',usepers:'0'}
@@ -40,7 +38,7 @@ export default class TradesMan extends Component {
     const activeList = await this.props.handleActiveList();
     const tradesChild = await this.props.handleTradesChild();
     const tradesParent = await this.props.handleTradesParent();
-    const topData = await this.props.handleTopData();
+
     DataPublicApi.queryReportTopData()
         .then(topData => {
             this.setState({topData,loading: false})

@@ -278,7 +278,10 @@ export const NAV = [
         }, {
             name: '领取核销渠道查询',
             url: '/admin/analysis/channel'
-        },
+        },{
+            name: '新商品',
+            url: '/admin/analysis/newProduct'
+        }
     ],
     [
         {

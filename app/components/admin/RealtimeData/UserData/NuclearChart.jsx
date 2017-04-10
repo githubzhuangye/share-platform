@@ -22,10 +22,11 @@ export default class ChannelChartUse extends Component {
         height: '300px',
     }
 
-  state={
-      loading:true,
+  state = {
+      // loading:true,
       Submit:false,
   }
+
   chartInstance = null;
   randomData() {
       return Math.round(Math.random()*1000);

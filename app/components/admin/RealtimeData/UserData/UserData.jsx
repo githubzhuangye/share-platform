@@ -1,11 +1,10 @@
 import React, {Component, PropTypes} from 'react';
 import  styles from './styles.css';
 import {cardable} from 'hoc';
-import { Cascader,DatePicker,Spin } from 'antd';
+import { Cascader,DatePicker,Spin,Icon } from 'antd';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as userDataActionCreators from 'redux/modules/userData';
-import ActivityUse from './ActivityUse.jsx';
 
 import UserChartUse from '../UserData/UserChartUse';
 import UserChartGet from '../UserData/UserChartGet';
@@ -18,46 +17,32 @@ import { DataSelectContainer } from 'containers/admin';
 import DataSummary from './DataSummary';
 import NuclearChart from './NuclearChart';
 import ReceiveChart from './ReceiveChart';
+import { userDataApi } from 'api';
 @cardable(['用户数据分析'])
 
 @connect(
   ({userData}) => ({
-    dataOverview:userData.dataOverview,
     userDataUse:userData.userDataUse,
     userDataGet:userData.userDataGet,
-    topData:userData.topData,
     loading: userData.loading,
   }),
-  dispatch => bindActionCreators(userDataActionCreators, dispatch)
+  dispatch => bindActionCreators(userDataActionCreators,dispatch)
 )
 
 export default class UserData extends Component {
     static propTypes = {
-      dataOverview: PropTypes.object.isRequired,
       userDataUse: PropTypes.object.isRequired,
       userDataGet: PropTypes.object.isRequired,
-      topData: PropTypes.object.isRequired,
       loading: PropTypes.bool.isRequired,
-    }
-    state={
-      loading:false,
-    }
-    async componentDidMount() {
-      const dataOverview = await this.props.handleDataOverview();
-      const userDataUse = await this.props.handleUserDataUse();
-      const loading = await this.props.handleUserDataUse();
-      const userDataGet = await this.props.handleUserDataGet();
-      const dataSummary = await this.props.handleDataSummary();
-      const topData = await this.props.handleTopData();
     }
 
     render() {
         const {  RangePicker } = DatePicker;
-        const { topData,loading,dataOverview,userDataUse,userDataGet } = this.props;
+        const { userDataUse,userDataGet,loading } = this.props;
         return (
             <div className={styles.container}>
                   <DataSelectContainer/>
-                  <DataSummary dataSource={topData}/>
+                  <DataSummary/>
                   <Spin spinning={loading}>
                   <div>
                     <div className={styles.body}>
@@ -68,9 +53,9 @@ export default class UserData extends Component {
                         <div>
                           <p className={styles.pData}>领券数据</p>
                           <ul>
-                            <li>总领核量:<span>{userDataGet?userDataGet.coupon:"--"}</span></li>
-                            <li>总领券人数:<span>{userDataGet?userDataGet.user:'--'}</span></li>
-                            <li>人均领券:<span>{userDataGet?userDataGet.avg:'--'}</span></li>
+                            <li>总领核量:<span>{userDataGet.coupon}</span></li>
+                            <li>总领券人数:<span>{userDataGet.user}</span></li>
+                            <li>人均领券:<span>{userDataGet.avg}</span></li>
                           </ul>
                           <ReceiveChart/>
                         </div>
@@ -79,9 +64,9 @@ export default class UserData extends Component {
                         <div>
                           <p className={styles.pData}>核券数据</p>
                           <ul>
-                            <li>总领核量:<span>{userDataUse?userDataGet.coupon:"--"}</span></li>
-                            <li>总领券人数:<span>{userDataUse?userDataGet.user:'--'}</span></li>
-                            <li>人均领券:<span>{userDataUse?userDataGet.avg:'--'}</span></li>
+                            <li>总领核量:<span>{userDataUse.coupon}</span></li>
+                            <li>总领券人数:<span>{userDataUse.user}</span></li>
+                            <li>人均领券:<span>{userDataUse.avg}</span></li>
                           </ul>
                           <NuclearChart/>
                         </div>
@@ -92,20 +77,20 @@ export default class UserData extends Component {
                         <div>
                           <p className={styles.pData}>领券数据</p>
                           <ul>
-                            <li>总领核量:<span>{userDataGet?userDataGet.coupon:"--"}</span></li>
-                            <li>总领券人数:<span>{userDataGet?userDataGet.user:'--'}</span></li>
-                            <li>人均领券:<span>{userDataGet?userDataGet.avg:'--'}</span></li>
+                            <li>总领核量:<span>{userDataGet.coupon}</span></li>
+                            <li>总领券人数:<span>{userDataGet.user}</span></li>
+                            <li>人均领券:<span>{userDataGet.avg}</span></li>
                           </ul>
-                          <UserChartGet/>
+                           <UserChartGet/>
                         </div>
                       </li>
                       <li className={styles.summarySummary}>
                         <div>
                           <p className={styles.pData}>核券数据</p>
                           <ul>
-                            <li>总领核量:<span>{userDataUse?userDataGet.coupon:"--"}</span></li>
-                            <li>总领券人数:<span>{userDataUse?userDataGet.user:'--'}</span></li>
-                            <li>人均领券:<span>{userDataUse?userDataGet.avg:'--'}</span></li>
+                            <li>总领核量:<span>{userDataUse.coupon}</span></li>
+                            <li>总领券人数:<span>{userDataUse.user}</span></li>
+                            <li>人均领券:<span>{userDataUse.avg}</span></li>
                           </ul>
                           <UserChartUse/>
                         </div>
@@ -139,7 +124,6 @@ export default class UserData extends Component {
                       <TableCoupon loading={false}/>
                     </div>
                   </div>*/}
-
             </div>
         )
     }

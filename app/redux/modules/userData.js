@@ -10,7 +10,6 @@ const { START, STOP, ALL } = PRODUCT_STATUS;
 
 const FETCH_ACTIVELIST = PREFIX + 'FETCH_ACTIVELIST';
 const FETCH_DATASUMMARY=PREFIX + 'FETCH_DATASUMMARY';
-const FETCH_DATAOVERVIEW=PREFIX + 'FETCH_DATAOVERVIEW';
 const FETCH_USERDATAUSE=PREFIX + 'FETCH_USERDATAUSE';
 const FETCH_USERDATAGET=PREFIX + 'FETCH_USERDATAGET';
 const FETCH_TOPDATA=PREFIX + 'FETCH_TOPDATA';
@@ -20,16 +19,15 @@ const FETCH_LOADED=PREFIX + 'FETCH_LOADED';
 
 const initialState = {
   activeList: [],
-  dataOverview:{},
   dataSummary:{},
-  userDataUse:{},
-  userDataGet:{},
+  userDataUse:{coupon: "0",user: "0",avg: "0"},
+  userDataGet:{coupon: "0",user: "0",avg: "0"},
   loading: false,
   error: '',
   queryStatus: ALL.value,
   queryData: {},
   productInfoFetched: false,
-  topData:{},
+  topData:{getusers: "--",useusers: "--",useavg: "--"},
 };
 
 function fetchActiveList(activeList) {
@@ -39,12 +37,7 @@ function fetchActiveList(activeList) {
   };
 }
 
-function fetchDataOverview(dataOverview) {
-  return {
-    type: FETCH_DATAOVERVIEW,
-    dataOverview: dataOverview
-  };
-}
+
 
 function fetchDataSummary(dataSummary) {
   return {
@@ -65,7 +58,7 @@ function fetchUserDataGet(userDataGet) {
     userDataGet: userDataGet
   };
 }
-function fetchTopData(topData) {
+export function fetchTopData(topData) {
   return {
     type: FETCH_TOPDATA,
     topData: topData
@@ -95,13 +88,6 @@ export function handleDataSummary(){
   }
 }
 
-
-export function handleDataOverview(){
-  return dispatch => {
-    userDataApi.dataOverview()
-    .then(data => dispatch(fetchDataOverview(data)));
-  }
-}
 //核劵
 export function handleUserDataUse(){
   return dispatch => {
@@ -116,17 +102,24 @@ export function handleUserDataUse(){
 //领劵
 export function handleUserDataGet(){
   return dispatch => {
+    dispatch(fetchLoading())
     userDataApi.userDataUse('GET')
     .then(data => {
       dispatch(fetchUserDataGet(data))
+      dispatch(fetchLoading(true))
     })
   }
 }
 
 export function handleTopData(){
   return dispatch => {
+    dispatch(fetchLoading())
     DataPublicApi.queryReportTopData()
-    .then(data => dispatch(fetchTopData(data)))
+    .then(data =>{
+      dispatch(fetchTopData(data))
+      dispatch(fetchLoading(true))
+      }
+    )
   }
 }
 
@@ -135,8 +128,6 @@ export default function reducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_ACTIVELIST:
       return {...state, activeList: action.activeList};
-    case FETCH_DATAOVERVIEW:
-      return {...state, dataOverview: action.dataOverview};
     case FETCH_DATASUMMARY:
       return {...state, dataSummary: action.dataSummary};
     case FETCH_USERDATAUSE:

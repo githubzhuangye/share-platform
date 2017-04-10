@@ -9,4 +9,4 @@ export HMenuContainer from './HMenu/HMenuContainer';
 export DataSelectContainer from './DataSelect/DataSelectContainer';
 export ChannelChartUseContainer from './DataCharts/ChannelChartUseContainer';
 export ChannelDataAnalysisContainer from './RealtimeData/ChannelDataAnalysisContainer';
-export CategoryDataContainer from './RealtimeData/CategoryDataContainer';
+export CategoryDataContainer from './RealtimeData/CategoryData/CategoryDataContainer';

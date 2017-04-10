@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
-import {cardable} from 'hoc';
+import { cardable } from 'hoc';
 import ActivityRegion from './ActivityRegion.jsx';
 import { Cascader,DatePicker } from 'antd';
 import  styles from './styles.css';
@@ -10,6 +10,8 @@ import TableRegion from './TableRegion';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as RegionDataActionCreators from 'redux/modules/RegionData';
+import { Tabs } from 'antd';
+const TabPane = Tabs.TabPane;
 
 @cardable(['区域数据分析'])
 @connect(
@@ -32,16 +34,23 @@ export default class RegionData extends Component {
             <div className={styles.container}>
                   <ActivityRegion dataSource={activeList}/>
                   <div className={styles.body}>
-                    <ul className={styles.body+" "+styles.flex}>
-                      <li>领券数量</li>
-                      <li>领券人数</li>
-                      <li>核券数量</li>
-                      <li>核券人数</li>
-                      <li>核销率</li>
-                    </ul>
-                    <div className={styles.center}>
-                      <Map/>
-                    </div>
+                    <Tabs defaultActiveKey="1" >
+                      <TabPane tab="领券数量" key="1">
+                        <Map/>
+                      </TabPane>
+                      <TabPane tab="领券人数" key="2">
+                        <Map/>
+                      </TabPane>
+                      <TabPane tab="核券数量" key="3">
+                        <Map/>
+                      </TabPane>
+                      <TabPane tab="核券人数" key="4">
+                        <Map/>
+                      </TabPane>
+                      <TabPane tab="核销率" key="5">
+                        <Map/>
+                      </TabPane>
+                    </Tabs>
                     <div>
                       <TableRegion loading={false}/>
                     </div>

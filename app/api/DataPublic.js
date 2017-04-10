@@ -90,15 +90,27 @@ export function dataFunnel(queryData) {
 }
 
 // 类目、单品数据
-export function CategoryData(type) {
-    return axios.get(`${host}/cp/message/m_goodsDataAnalysis.action`, {
-  //    return axios.get(`http://localhost:8080/data5.json`, {
+export function goodsDataAnalysis(queryData,type) {
+     return axios.get(`${host}/cp/message/m_goodsDataAnalysis.action`, {
+    // return axios.get(`http://localhost:8080/goods.json`, {
         params: {
             ...generateAuthFields(),
-            queryType:type
+            ...queryData,
+            queryType: type
         }
-    }).then(data => data.data.data)
+    }).then(data => {
+        if (data.data.code == '200') {
+            const dataSource = data.data.data;
+            const dataCharts = dataSource.detail;
+            const $data = {dataCharts};
+            return $data;
+        } else {
+            message.error(data.msg);
+        }
+    })
 }
+
+
 
 //零售商&门店parent
 export function TradesParent(queryType,tag) {
@@ -137,6 +149,8 @@ export function channelDataAnalysis(type,activeid,starttime,endtime) {
     }).then(data => data.data.data)
 }
 
+
+
 // 用户数据-核劵数据
 export function userDataUse(type,activeid,starttime,endtime) {
     return axios.get(`${host}/cp/message/m_userDataAnalysis.action`, {
@@ -157,7 +171,7 @@ export function queryReportTopData(queryType) {
     //  return axios.get(`http://localhost:8080/top.json`, {
         params: {
             ...generateAuthFields(),
-            ...queryType
+            ...queryType,
         }
     }).then(data => data.data.data)
 }

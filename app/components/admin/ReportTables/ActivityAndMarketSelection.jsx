@@ -37,7 +37,7 @@ export default class ActivityAndMarketSelection extends Component {
     const { form, activityList, marketList, activityFieldName = 'activeId', hideMarket } = this.props;
     const { getFieldDecorator } = form;
     const activityFieldDecorator = getFieldDecorator(activityFieldName, {
-      initialValue: activityList.length > 0 ? activityList[0].activeid : undefined,
+      initialValue: activityList > 0 ? activityList[0].activeid : undefined,
       onChange: ::this.handleActivityChange,
       rules: [
         {required: true, message: '请选择活动'}

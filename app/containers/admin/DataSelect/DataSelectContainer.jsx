@@ -2,6 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as dataSelectActionCreators from 'redux/modules/dataSelect';
+import * as userDataActionCreators from 'redux/modules/userData';
 import { USER_TYPE } from 'config/constants';
 import {YESDAY, POINTDAY, SEVENDAY, NINTHDAY} from 'helpers/util';
 import { DataSelect } from 'components/admin';
@@ -12,14 +13,15 @@ let firstVal = 0;
 import ChannelChartUse from 'components/admin/RealtimeData/ChannelDataAnalysis/ChannelChartUse'
 import ChannelChartGet from 'components/admin/RealtimeData/ChannelDataAnalysis/ChannelChartGet'
 @connect(
-  ({dataSelect}) => ({
+  ({dataSelect,userData}) => ({
     activeList: dataSelect.activeList,
     starttime: dataSelect.starttime,
     endtime: dataSelect.endtime,
     activeId: dataSelect.activeId,
     Submit: dataSelect.Submit,
+    topData:userData.topData,
   }),
-  dispatch => bindActionCreators(dataSelectActionCreators, dispatch),
+  dispatch => bindActionCreators({...dataSelectActionCreators,...userDataActionCreators}, dispatch),
 )
 
 export default class DataSelectContainer extends Component {
@@ -27,6 +29,7 @@ export default class DataSelectContainer extends Component {
     setDates: PropTypes.func.isRequired,
     activeList: PropTypes.array.isRequired,
     activeId: PropTypes.string.isRequired,
+
   }
 
   state = {
@@ -39,6 +42,7 @@ export default class DataSelectContainer extends Component {
     _starttime:'',
     _endtime:'',
     Submit:false,
+    topData:'',
   }
 
   handleDateChange(value,dateString){
@@ -47,6 +51,7 @@ export default class DataSelectContainer extends Component {
   }
 
   handleActiveChange(value){
+    console.info(value)
     this.props.fetchActiveId(value.split(",")[0]);
 
     const { activeList,activeId } = this.props;
@@ -61,11 +66,13 @@ export default class DataSelectContainer extends Component {
        '_ed' : dataChartsVal._edtime.split(" ")[0],
     }
     this.setState({chartsVal: dVal});
+
   }
 
   disabledDate(current) {
     const { chartsVal } = this.state;
     const { _st,_ed } = chartsVal;
+
     let _s = _st.replace(/-/g,'/');
     let _e = _ed.replace(/-/g,'/');
 
@@ -79,20 +86,25 @@ export default class DataSelectContainer extends Component {
   }
 
   handleOnsubmit(){
-    const { setDates,activeId,Submit } = this.props;
+    const { setDates,activeId,Submit,topData } = this.props;
 
     const { _starttime,_endtime } = this.state;//选择到的时间
-    //此时的endtime,starttime时间是上一次选择的时间
+
     setDates(_starttime,_endtime);
     this.setState({loading:false});
     this.props.fetchSubmit();
+    this.props.handleTopData();
+    this.props.handleUserDataUse()
+    this.props.handleUserDataGet();
   }
 
   componentDidMount() {
-      const { setDates } = this.props;
-      const { chartsVal } = this.state;
+      // const { setDates } = this.props;
+      // const { chartsVal } = this.state;
       const activeList = this.props.handleActivityList();
-      firstVal = 0;
+      this.handleOnsubmit();
+      // firstVal = 0;
+
   }
   componentWillReceiveProps(nextProps) {
         firstVal=0;

@@ -6,3 +6,4 @@ export MarketProductSale from './MarketProductSale.jsx';
 export Channel from './Channel.jsx';
 export ActivityAndMarketSelection from './ActivityAndMarketSelection.jsx';
 export ReportDatePicker from './ReportDatePicker.jsx';
+export newProduct from './newProduct.jsx';

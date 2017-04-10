@@ -32,6 +32,7 @@ export default class ActivitySelection extends Component {
       let endtime = v.split('_')[2];
       let status = v.split('_')[3];
       this.setState({starttime: starttime,endtime: endtime});
+      console.info(starttime)
     }
 
     disabledDate(current) {
